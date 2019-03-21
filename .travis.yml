@@ -20,3 +20,6 @@ install:
 
 script:
   - "mvn clean package -Dmaven.test.skip=false"
+
+after_script:
+  - ./scripts/run-selenium.sh
